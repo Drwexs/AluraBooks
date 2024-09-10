@@ -28,10 +28,10 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;  
+    width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
@@ -51,66 +51,93 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
-.container__titulo{
+.container__titulo {
     display: none;
 }
 
-.opcoes{
+.opcoes {
+    display: none;
+}
+
+.container__texto {
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
+
     .container__titulo,
-    .container__titulo--negrito{
+    .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
     }
 
-    .container__titulo{
+    .container__titulo {
         font-weight: 400;
         display: block;
     }
-    
-    .container__titulo--negrito{
+
+    .container__titulo--negrito {
         font-weight: 700;
     }
 
-    .opcoes{
+    .opcoes {
         display: flex;
     }
 
-    .opcoes__item{
+    .opcoes__item {
         padding: 0 1em;
         text-transform: uppercase;
     }
 
-    .opcoes__link{
+    .opcoes__link {
         text-decoration: none;
         color: var(--preto);
     }
 
-    .container__imagem-transparente{
+    .container__imagem-transparente {
         display: none;
     }
 
-    .cabecalho__menu-hamburguer{
+    .cabecalho__menu-hamburguer {
         display: none;
     }
 
-    .opcoes__botao:checked~.lista-menu{
+    .opcoes__botao:checked~.lista-menu {
         display: block;
         width: auto;
     }
 
-    .opcoes__botao{
+    .opcoes__botao {
         display: none;
     }
 }
 
+@media screen and (min-width:1728px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: auto;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
